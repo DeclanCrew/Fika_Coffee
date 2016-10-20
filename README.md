@@ -1,2 +1,0 @@
-# Fika_Coffee
-Sales_and_Analytics_webapp_for_catering
