@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'compressor',
     'widget_tweaks',
-] + get_core_apps(['fika.partner'])
+] + get_core_apps(['fika.partner', 'fika.dashboard'])
 
 SITE_ID = 1
 
@@ -86,7 +86,7 @@ from oscar import OSCAR_MAIN_TEMPLATE_DIR
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [location('templates'),
+        'DIRS': [location('../templates'),
                  OSCAR_MAIN_TEMPLATE_DIR
         ],
         'OPTIONS': {
